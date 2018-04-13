@@ -15,16 +15,17 @@ is.data.frame(USPersonalExpenditure)
 df <- data.frame(USPersonalExpenditure)
 
 # What are the column names of your dataframe?
-X.USPersonalExpenditure
+
+# X1940, X1945, X1950, X1955, X1960
 
 ## Consider: why are they so strange? Think about whether you could use a number 
 ## like 1940 with dollar notation!
 
 # What are the row names of your dataframe?
-
+rownames(df)
 
 # Add a column "category" to your data frame that contains the rownames
-
+df$category <- rownames(df)
 
 # How much money was spent on personal care in 1940?
 
